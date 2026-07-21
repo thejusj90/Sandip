@@ -1,77 +1,172 @@
-// Mobile menu toggle
-const menuToggle = document.getElementById('menuToggle');
-const mobileMenu = document.getElementById('mobileMenu');
+/* ==========================================================================
+   Sandip Jadhav — main.js
+   Shared site behaviour: mobile nav, FAQ accordion, footer year,
+   analytics hook, CTA click tracking.
+   ========================================================================== */
 
-menuToggle.addEventListener('click', () => {
-  const isOpen = menuToggle.getAttribute('aria-expanded') === 'true';
-  menuToggle.setAttribute('aria-expanded', String(!isOpen));
-  mobileMenu.hidden = isOpen;
-  document.body.style.overflow = isOpen ? '' : 'hidden';
-});
+(function () {
+  "use strict";
 
-mobileMenu.querySelectorAll('a').forEach(link => {
-  link.addEventListener('click', () => {
-    menuToggle.setAttribute('aria-expanded', 'false');
-    mobileMenu.hidden = true;
-    document.body.style.overflow = '';
-  });
-});
+  /* ------------------------------------------------------------------
+     Analytics — centralised event hook.
+     Replace `sendAnalyticsEvent` internals with your real provider
+     (GA4, Plausible, Meta Pixel, etc.) in ONE place only.
+     No tracking IDs are wired up. Do not add real tracking IDs
+     directly into page markup — configure them here.
+  ------------------------------------------------------------------ */
+  const ANALYTICS_CONFIG = {
+    enabled: false, // flip to true once a real analytics provider is connected
+    // providerId: "" // e.g. GA4 measurement ID — left blank intentionally
+  };
 
-// FAQ accordion
-document.querySelectorAll('.faq-item').forEach(item => {
-  const btn = item.querySelector('.faq-q');
-  btn.addEventListener('click', () => {
-    const isOpen = item.classList.contains('open');
-    document.querySelectorAll('.faq-item.open').forEach(open => {
-      if (open !== item) {
-        open.classList.remove('open');
-        open.querySelector('.faq-q').setAttribute('aria-expanded', 'false');
-      }
+  function sendAnalyticsEvent(eventName, payload) {
+    payload = payload || {};
+    if (!ANALYTICS_CONFIG.enabled) {
+      // Development fallback — visible in console only.
+      console.log("[analytics:stub]", eventName, payload);
+      return;
+    }
+    // Example wiring for GA4, once enabled:
+    // if (window.gtag) window.gtag('event', eventName, payload);
+  }
+  window.SJ_trackEvent = sendAnalyticsEvent;
+
+  /* ------------------------------------------------------------------
+     Mobile navigation
+  ------------------------------------------------------------------ */
+  function initNav() {
+    const toggle = document.querySelector(".nav-toggle");
+    const links = document.querySelector(".nav-links");
+    if (!toggle || !links) return;
+
+    toggle.addEventListener("click", function () {
+      const isOpen = links.classList.toggle("open");
+      toggle.setAttribute("aria-expanded", isOpen ? "true" : "false");
+      document.body.classList.toggle("nav-open", isOpen);
     });
-    item.classList.toggle('open', !isOpen);
-    btn.setAttribute('aria-expanded', String(!isOpen));
-  });
-});
 
-// Subtle scroll reveal, respects reduced motion
-const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-
-if (!prefersReducedMotion && 'IntersectionObserver' in window) {
-  const revealTargets = document.querySelectorAll(
-    '.recognition-head, .rq, .definition-statement, .method-step, .lib-num, .faq-item, .final-statement'
-  );
-  revealTargets.forEach(el => {
-    el.style.opacity = '0';
-    el.style.transform = 'translateY(14px)';
-    el.style.transition = 'opacity 600ms ease, transform 600ms ease';
-  });
-
-  const observer = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        entry.target.style.opacity = '1';
-        entry.target.style.transform = 'translateY(0)';
-        observer.unobserve(entry.target);
-      }
+    links.querySelectorAll("a").forEach(function (link) {
+      link.addEventListener("click", function () {
+        links.classList.remove("open");
+        toggle.setAttribute("aria-expanded", "false");
+        document.body.classList.remove("nav-open");
+      });
     });
-  }, { threshold: 0.2, rootMargin: '0px 0px -60px 0px' });
+  }
 
-  revealTargets.forEach(el => observer.observe(el));
-}
+  /* ------------------------------------------------------------------
+     FAQ accordion (accessible)
+  ------------------------------------------------------------------ */
+  function initFaq() {
+    const items = document.querySelectorAll(".faq-item");
+    items.forEach(function (item) {
+      const btn = item.querySelector(".faq-question");
+      const answer = item.querySelector(".faq-answer");
+      if (!btn || !answer) return;
 
-// Timeline fill: animate width in on view (05:00 sliver)
-const timelineFill = document.querySelector('.timeline-fill');
-if (timelineFill && !prefersReducedMotion && 'IntersectionObserver' in window) {
-  const targetWidth = timelineFill.style.width;
-  timelineFill.style.width = '0%';
-  const tObserver = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        timelineFill.style.transition = 'width 900ms ease';
-        timelineFill.style.width = targetWidth;
-        tObserver.unobserve(entry.target);
-      }
+      btn.addEventListener("click", function () {
+        const isOpen = item.getAttribute("data-open") === "true";
+        item.setAttribute("data-open", isOpen ? "false" : "true");
+        btn.setAttribute("aria-expanded", isOpen ? "false" : "true");
+      });
     });
-  }, { threshold: 0.5 });
-  tObserver.observe(timelineFill);
-}
+  }
+
+  /* ------------------------------------------------------------------
+     CTA click tracking — any element with [data-track] fires an event
+  ------------------------------------------------------------------ */
+  function initCtaTracking() {
+    document.querySelectorAll("[data-track]").forEach(function (el) {
+      el.addEventListener("click", function () {
+        sendAnalyticsEvent(el.getAttribute("data-track"), {
+          label: el.textContent.trim(),
+          path: window.location.pathname
+        });
+      });
+    });
+  }
+
+  /* ------------------------------------------------------------------
+     Footer year
+  ------------------------------------------------------------------ */
+  function initFooterYear() {
+    const el = document.querySelector("[data-year]");
+    if (el) el.textContent = new Date().getFullYear();
+  }
+
+  /* ------------------------------------------------------------------
+     Homepage Breathing Check preview (first 3 questions).
+     Answers are stored in sessionStorage and consumed by
+     breathing-check.js so nothing entered here is discarded.
+  ------------------------------------------------------------------ */
+  function initCheckPreview() {
+    const root = document.getElementById("check-preview");
+    if (!root) return;
+    const previewAnswers = [null, null, null];
+
+    function qsaLocal(sel, ctx) { return Array.from((ctx || document).querySelectorAll(sel)); }
+
+    function goTo(step) {
+      qsaLocal(".check-preview-step", root).forEach(function (el) {
+        el.classList.toggle("active", el.getAttribute("data-cp-step") === step);
+      });
+      ["1", "2", "3"].forEach(function (n) {
+        const bar = document.getElementById("cp-bar-" + n);
+        if (!bar) return;
+        bar.classList.remove("active", "done");
+        if (step === "done" || Number(n) < Number(step)) bar.classList.add("done");
+        else if (n === step) bar.classList.add("active");
+      });
+    }
+
+    qsaLocal("[data-cp-next]", root).forEach(function (btn) {
+      btn.addEventListener("click", function () {
+        const step = btn.closest(".check-preview-step").getAttribute("data-cp-step");
+        const qIndex = Number(step) - 1;
+        const val = Number(btn.getAttribute("data-cp-value"));
+        if (qIndex >= 0 && qIndex < 3) previewAnswers[qIndex] = val;
+
+        const next = btn.getAttribute("data-cp-next");
+        goTo(next);
+        if (next === "done") {
+          try {
+            sessionStorage.setItem("sj_bc_preview", JSON.stringify(previewAnswers));
+          } catch (e) { /* sessionStorage unavailable — quiz still works standalone */ }
+          sendAnalyticsEvent("breathing_check_start", { source: "homepage_preview" });
+        }
+      });
+    });
+
+    goTo("1");
+  }
+
+  /* ------------------------------------------------------------------
+     Scroll reveal
+  ------------------------------------------------------------------ */
+  function initScrollReveal() {
+    const targets = document.querySelectorAll(".reveal");
+    if (!targets.length) return;
+    if (!("IntersectionObserver" in window)) {
+      targets.forEach(function (el) { el.classList.add("in-view"); });
+      return;
+    }
+    const obs = new IntersectionObserver(function (entries) {
+      entries.forEach(function (entry) {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("in-view");
+          obs.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.12, rootMargin: "0px 0px -60px 0px" });
+    targets.forEach(function (el) { obs.observe(el); });
+  }
+
+  document.addEventListener("DOMContentLoaded", function () {
+    initNav();
+    initFaq();
+    initCtaTracking();
+    initFooterYear();
+    initCheckPreview();
+    initScrollReveal();
+  });
+})();
