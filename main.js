@@ -94,10 +94,71 @@
     if (el) el.textContent = new Date().getFullYear();
   }
 
+  /* ------------------------------------------------------------------
+     Homepage Breathing Check preview (first 3 questions, no data saved)
+  ------------------------------------------------------------------ */
+  function initCheckPreview() {
+    const root = document.getElementById("check-preview");
+    if (!root) return;
+
+    function goTo(step) {
+      qsaLocal(".check-preview-step", root).forEach(function (el) {
+        el.classList.toggle("active", el.getAttribute("data-cp-step") === step);
+      });
+      ["1", "2", "3"].forEach(function (n) {
+        const bar = document.getElementById("cp-bar-" + n);
+        if (!bar) return;
+        bar.classList.remove("active", "done");
+        if (step === "done" || Number(n) < Number(step)) bar.classList.add("done");
+        else if (n === step) bar.classList.add("active");
+      });
+      if (step === "1") {
+        const bar1 = document.getElementById("cp-bar-1");
+        if (bar1) { bar1.classList.remove("done"); bar1.classList.add("active"); }
+      }
+    }
+
+    function qsaLocal(sel, ctx) { return Array.from((ctx || document).querySelectorAll(sel)); }
+
+    qsaLocal("[data-cp-next]", root).forEach(function (btn) {
+      btn.addEventListener("click", function () {
+        goTo(btn.getAttribute("data-cp-next"));
+        if (btn.getAttribute("data-cp-next") === "done") {
+          sendAnalyticsEvent("breathing_check_start", { source: "homepage_preview" });
+        }
+      });
+    });
+
+    goTo("1");
+  }
+
+  /* ------------------------------------------------------------------
+     Scroll reveal
+  ------------------------------------------------------------------ */
+  function initScrollReveal() {
+    const targets = document.querySelectorAll(".reveal");
+    if (!targets.length) return;
+    if (!("IntersectionObserver" in window)) {
+      targets.forEach(function (el) { el.classList.add("in-view"); });
+      return;
+    }
+    const obs = new IntersectionObserver(function (entries) {
+      entries.forEach(function (entry) {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("in-view");
+          obs.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.12, rootMargin: "0px 0px -60px 0px" });
+    targets.forEach(function (el) { obs.observe(el); });
+  }
+
   document.addEventListener("DOMContentLoaded", function () {
     initNav();
     initFaq();
     initCtaTracking();
     initFooterYear();
+    initCheckPreview();
+    initScrollReveal();
   });
 })();
