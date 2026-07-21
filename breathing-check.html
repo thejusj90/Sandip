@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Breathing Check | Sandip Jadhav</title>
+<meta name="description" content="Take the free 2-minute Breathing Check &mdash; 8 questions to help you understand your everyday breathing pattern. Not a diagnosis, just a starting point.">
+<link rel="canonical" href="https://example.com/breathing-check.html">
+<meta property="og:type" content="website">
+<meta property="og:title" content="The Breathing Check">
+<meta property="og:description" content="2 minutes. 8 questions. A starting point, not a diagnosis.">
+<meta property="og:url" content="https://example.com/breathing-check.html">
+<link rel="icon" href="assets/images/favicon.png">
+<link rel="stylesheet" href="assets/css/styles.css">
+<meta name="robots" content="noindex, follow">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap">
+    <a href="index.html" class="brand">
+      <span class="brand-name">Sandip Jadhav</span>
+      <span class="brand-tag">Breathing Pattern Correction</span>
+    </a>
+    <nav class="main-nav" aria-label="Primary">
+      <button class="nav-toggle" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <div class="nav-links">
+        <a href="about.html">About</a>
+        <a href="breathing-pattern-correction.html">Breathing Correction</a>
+        <a href="consultation.html">1:1 Consultation</a>
+        <a href="learn.html">Learn</a>
+        <a href="breathing-check.html" class="btn btn-primary" aria-current="page">Take the Breathing Check</a>
+      </div>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="section-dark" style="padding-block: clamp(48px, 8vw, 88px);">
+    <div class="wrap">
+      <div id="breathing-check-app" class="quiz-shell">
+
+        <div class="quiz-progress">
+          <div class="quiz-progress-track">
+            <div class="quiz-progress-fill"></div>
+          </div>
+          <span class="quiz-progress-label">Start</span>
+        </div>
+
+        <div class="quiz-panel">
+
+          <!-- Intro step -->
+          <div class="quiz-step active" data-step="intro">
+            <div class="quiz-intro">
+              <span class="eyebrow">The Breathing Check</span>
+              <h1>How do you breathe when you&rsquo;re not thinking about breathing?</h1>
+              <p class="lede">Eight short questions about your everyday breathing habits. Answer honestly &mdash; there are no right answers, only patterns worth noticing.</p>
+              <div class="check-meta">
+                <span>2 minutes</span>
+                <span>8 questions</span>
+                <span>A starting point &mdash; not a diagnosis</span>
+              </div>
+              <div class="cta-row">
+                <button type="button" id="quiz-start-btn" class="btn btn-primary">Start My Breathing Check</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Question steps injected here by breathing-check.js -->
+          <div id="quiz-questions"></div>
+
+          <!-- Email gate -->
+          <div class="quiz-step" data-step="email">
+            <span class="eyebrow">Almost there</span>
+            <h2>Your Breathing Check is complete.</h2>
+            <p class="lede">Enter your email to unlock your personalised result and receive a copy in your inbox.</p>
+
+            <form id="breathing-check-form" novalidate style="margin-top:2rem;">
+              <div class="quiz-form-row">
+                <label for="bc-firstname">First name</label>
+                <input type="text" id="bc-firstname" name="firstName" placeholder="Your first name" autocomplete="given-name" required>
+                <span class="form-error" id="bc-firstname-error">Please enter your first name.</span>
+              </div>
+              <div class="quiz-form-row">
+                <label for="bc-email">Email</label>
+                <input type="email" id="bc-email" name="email" placeholder="you@example.com" autocomplete="email" required>
+                <span class="form-error" id="bc-email-error">Please enter a valid email address.</span>
+              </div>
+              <div class="quiz-form-row">
+                <label for="bc-phone">Phone / WhatsApp (optional)</label>
+                <input type="tel" id="bc-phone" name="phone" placeholder="Optional" autocomplete="tel">
+              </div>
+              <div class="consent-row">
+                <input type="checkbox" id="bc-consent" name="consent" required>
+                <label for="bc-consent">I agree to receive my Breathing Check result and related emails from Sandip Jadhav. I can unsubscribe at any time. See the <a href="privacy-policy.html">Privacy Policy</a>.</label>
+              </div>
+              <span class="form-error" id="bc-consent-error">Please confirm consent to continue.</span>
+              <button type="submit" class="btn btn-primary btn-block" style="margin-top:0.5rem;">Show My Result</button>
+            </form>
+          </div>
+
+          <!-- Result -->
+          <div class="quiz-step" data-step="result">
+            <div class="result-panel">
+              <span class="eyebrow" id="result-greeting">Here&rsquo;s your starting point.</span>
+              <span class="result-badge low" id="result-badge">Result</span>
+              <div class="result-score" id="result-score">0<span>/ 16</span></div>
+              <h2 id="result-title-hidden" class="visually-hidden">Your Breathing Check result</h2>
+              <div class="prose">
+                <p id="result-body"></p>
+                <div class="note-box" id="result-disclaimer"></div>
+              </div>
+              <div class="cta-row">
+                <a href="book.html" class="btn btn-primary" data-track="consultation_cta_click">Book a 1:1 Consultation with Sandip</a>
+                <a href="breathing-pattern-correction.html" class="btn btn-secondary">Learn About Breathing Pattern Correction</a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <span class="brand-name">Sandip Jadhav</span>
+        <p>Breathing Pattern Correction Practitioner. Personalised 1:1 consultations to help you understand and retrain your everyday breathing pattern.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Explore</h4>
+        <ul>
+          <li><a href="about.html">About</a></li>
+          <li><a href="breathing-pattern-correction.html">Breathing Correction</a></li>
+          <li><a href="consultation.html">1:1 Consultation</a></li>
+          <li><a href="learn.html">Learn</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Site</h4>
+        <ul>
+          <li><a href="breathing-check.html">Breathing Check</a></li>
+          <li><a href="faq.html">FAQ</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="book.html">Book</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Legal</h4>
+        <ul>
+          <li><a href="privacy-policy.html">Privacy Policy</a></li>
+          <li><a href="disclaimer.html">Disclaimer</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; <span data-year>2026</span> Sandip Jadhav. All rights reserved.</span>
+      <span>Not a substitute for professional medical advice.</span>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/js/main.js"></script>
+<script src="assets/js/breathing-check.js"></script>
+</body>
+</html>
