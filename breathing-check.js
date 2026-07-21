@@ -348,6 +348,44 @@
   }
 
   /* ------------------------------------------------------------------
+     Consume homepage preview answers (if any) so nothing the visitor
+     already answered on the homepage gets thrown away.
+  ------------------------------------------------------------------ */
+  function consumePreviewAnswers() {
+    let stored = null;
+    try {
+      stored = sessionStorage.getItem("sj_bc_preview");
+    } catch (e) { return; }
+    if (!stored) return;
+    try {
+      const parsed = JSON.parse(stored);
+      if (Array.isArray(parsed)) {
+        parsed.forEach(function (val, i) {
+          if (i < state.answers.length && (val === 0 || val === 1 || val === 2)) {
+            state.answers[i] = val;
+          }
+        });
+      }
+      sessionStorage.removeItem("sj_bc_preview");
+    } catch (e) { /* malformed — ignore, quiz still works standalone */ }
+  }
+
+  function markPreanswered() {
+    const answered = state.answers.reduce(function (n, v) { return v !== null ? n + 1 : n; }, 0);
+    if (!answered) return 0;
+    // Reflect the pre-filled selections visually on those question steps.
+    state.answers.forEach(function (val, index) {
+      if (val === null) return;
+      const step = qs('.quiz-step[data-step="' + (index + 1) + '"]');
+      if (!step) return;
+      qsa(".quiz-option", step).forEach(function (opt) {
+        opt.setAttribute("aria-pressed", Number(opt.dataset.value) === val ? "true" : "false");
+      });
+    });
+    return answered;
+  }
+
+  /* ------------------------------------------------------------------
      Init
   ------------------------------------------------------------------ */
   function init() {
@@ -358,14 +396,25 @@
     progressLabel = qs(".quiz-progress-label", root);
 
     buildQuestionSteps();
+    consumePreviewAnswers();
+    const preanswered = markPreanswered();
     initEmailForm();
 
     const startBtn = qs("#quiz-start-btn");
     if (startBtn) {
       startBtn.addEventListener("click", function () {
         window.SJ_trackEvent && window.SJ_trackEvent("breathing_check_start", {});
-        goToStep(1);
+        goToStep(preanswered ? preanswered + 1 : 1);
       });
+      if (preanswered) {
+        startBtn.textContent = "Continue My Check \u2192";
+        const introNote = document.createElement("p");
+        introNote.className = "lede";
+        introNote.style.marginTop = "0.75rem";
+        introNote.style.fontSize = "0.85rem";
+        introNote.textContent = "Your first " + preanswered + " answers carried over from the homepage.";
+        startBtn.closest(".cta-row").insertAdjacentElement("beforebegin", introNote);
+      }
     }
 
     const toEmailBtn = qs("#quiz-to-email-btn");

@@ -95,11 +95,16 @@
   }
 
   /* ------------------------------------------------------------------
-     Homepage Breathing Check preview (first 3 questions, no data saved)
+     Homepage Breathing Check preview (first 3 questions).
+     Answers are stored in sessionStorage and consumed by
+     breathing-check.js so nothing entered here is discarded.
   ------------------------------------------------------------------ */
   function initCheckPreview() {
     const root = document.getElementById("check-preview");
     if (!root) return;
+    const previewAnswers = [null, null, null];
+
+    function qsaLocal(sel, ctx) { return Array.from((ctx || document).querySelectorAll(sel)); }
 
     function goTo(step) {
       qsaLocal(".check-preview-step", root).forEach(function (el) {
@@ -112,18 +117,21 @@
         if (step === "done" || Number(n) < Number(step)) bar.classList.add("done");
         else if (n === step) bar.classList.add("active");
       });
-      if (step === "1") {
-        const bar1 = document.getElementById("cp-bar-1");
-        if (bar1) { bar1.classList.remove("done"); bar1.classList.add("active"); }
-      }
     }
-
-    function qsaLocal(sel, ctx) { return Array.from((ctx || document).querySelectorAll(sel)); }
 
     qsaLocal("[data-cp-next]", root).forEach(function (btn) {
       btn.addEventListener("click", function () {
-        goTo(btn.getAttribute("data-cp-next"));
-        if (btn.getAttribute("data-cp-next") === "done") {
+        const step = btn.closest(".check-preview-step").getAttribute("data-cp-step");
+        const qIndex = Number(step) - 1;
+        const val = Number(btn.getAttribute("data-cp-value"));
+        if (qIndex >= 0 && qIndex < 3) previewAnswers[qIndex] = val;
+
+        const next = btn.getAttribute("data-cp-next");
+        goTo(next);
+        if (next === "done") {
+          try {
+            sessionStorage.setItem("sj_bc_preview", JSON.stringify(previewAnswers));
+          } catch (e) { /* sessionStorage unavailable — quiz still works standalone */ }
           sendAnalyticsEvent("breathing_check_start", { source: "homepage_preview" });
         }
       });
