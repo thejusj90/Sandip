@@ -16,7 +16,7 @@ main{overflow:hidden}a{text-decoration:none;color:inherit}button,input,textarea{
 .brand{display:flex;align-items:center;gap:12px}.brand strong{display:block;font:400 21px Georgia,serif}.brand small{display:block;font-size:9px;opacity:.75}
 .nav nav{display:flex;align-items:center;gap:28px;font-size:12px}.menu{display:none;background:none;border:0;color:white;font-size:26px}
 .gold{background:var(--gold)!important;color:white!important}.nav nav .gold{padding:14px 19px}
-.hero{min-height:620px;position:relative;background-image:url('./assets/sandip-hero-enhanced.png');background-size:cover;background-position:center top}
+.hero{min-height:620px;position:relative;background-image:url('./sandip-hero-enhanced.png');background-size:cover;background-position:center top}
 .heroCopy{padding:72px 6vw 55px 7vw;max-width:640px}.kicker,.section header p{font-size:10px;letter-spacing:.18em;font-weight:700;color:#a4773d}
 .hero h1,.section h2,.practice h2,.contact h2{font:400 clamp(42px,4.5vw,68px)/1.05 Georgia,serif;letter-spacing:-.035em;margin:0}
 .lead{font-size:16px;line-height:1.75;color:#566862;max-width:600px;margin:25px 0}
@@ -116,7 +116,7 @@ main{overflow:hidden}a{text-decoration:none;color:inherit}button,input,textarea{
 @keyframes slowSpin{from{transform:rotate(0deg)}to{transform:rotate(360deg)}}
 .reflection{border-left:1px solid rgba(255,255,255,.14);padding-left:45px}.light{background:white;color:var(--teal)}
 .about{display:grid;grid-template-columns:270px 1fr .85fr;gap:50px;align-items:center;background:#f6f0e7}
-.aboutPhoto{height:360px;background:url('./assets/sandip-portrait-enhanced.png') center 18%/cover;border:10px solid #fff;box-shadow:0 22px 46px rgba(30,50,40,.22),0 0 0 1px rgba(7,62,58,.06)}
+.aboutPhoto{height:360px;background:url('./sandip-portrait-enhanced.png') center 18%/cover;border:10px solid #fff;box-shadow:0 22px 46px rgba(30,50,40,.22),0 0 0 1px rgba(7,62,58,.06)}
 .about article header{text-align:left}.about article>p{font-size:12px;line-height:1.8;color:var(--muted)}
 .stats{display:flex;gap:0;border-top:1px solid var(--line);padding-top:24px;margin-top:26px}
 .stats span{font-size:9px;letter-spacing:.05em;color:var(--muted);display:flex;flex-direction:column;gap:6px;padding:0 26px}
@@ -199,7 +199,7 @@ footer{gap:32px;padding:48px 22px 28px}.letter h2{font-size:27px;line-height:1.2
 </style>
 </helmet>
 <main>
-<header class="{{ navBarClass }}" ref="{{ navRef }}"><a class="brand" href="#top"><img class="brandLogo" src="./assets/dipatma-logo.png" alt="Dipatma Holistic Wellness" /><span><strong>FullChoice Breath</strong><small>Breathing is automatic. Choice can be trained.</small></span></a>
+<header class="{{ navBarClass }}" ref="{{ navRef }}"><a class="brand" href="#top"><img class="brandLogo" src="./dipatma-logo.png" alt="Dipatma Holistic Wellness" /><span><strong>FullChoice Breath</strong><small>Breathing is automatic. Choice can be trained.</small></span></a>
 <button class="menu" onClick="{{ toggleMenu }}" aria-label="Toggle menu">{{ menuIcon }}</button>
 <nav class="{{ navClass }}" onClick="{{ closeMenu }}"><a href="#method">The Method</a><a href="#science">Science</a><a href="#experience">For You</a><a href="#resources">Resources</a><a href="#about">About</a><a class="gold" href="#consultation">Book a Consultation</a></nav>
 </header>
@@ -282,7 +282,7 @@ footer{gap:32px;padding:48px 22px 28px}.letter h2{font-size:27px;line-height:1.2
 <sc-if value="{{ contactErrored }}" hint-placeholder-val="{{ false }}"><p class="formMessage error" role="alert">The request could not be sent. Please try again.</p></sc-if>
 </form></section>
 
-<footer><div class="footerBrand"><a class="brand" href="#top"><img class="brandLogo" src="./assets/dipatma-logo.png" alt="Dipatma Holistic Wellness" /><span><strong>FullChoice Breath</strong><small>Developed by Sandip Jadhav</small></span></a></div>
+<footer><div class="footerBrand"><a class="brand" href="#top"><img class="brandLogo" src="./dipatma-logo.png" alt="Dipatma Holistic Wellness" /><span><strong>FullChoice Breath</strong><small>Developed by Sandip Jadhav</small></span></a></div>
 <small>© {{ year }} FullChoice Breath. All rights reserved.　 <a href="/privacy">Privacy Policy</a>　|　<a href="/terms">Terms of Use</a>　|　<a href="/refund">Refund Policy</a><br /><br />FullChoice Breath is a complementary wellness method. It is not a diagnosis, treatment or substitute for medical care.</small></footer>
 </main>
 </x-dc>
