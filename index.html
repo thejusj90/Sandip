@@ -354,8 +354,11 @@ class Component extends DCLogic {
     this.setState({contactStatus:"sending"});
     const form=e.currentTarget;
     const body=Object.fromEntries(new FormData(form));
+    body._subject="New enquiry from FullChoice Breath";
+    body._template="table";
+    body._autoresponse="Thank you for reaching out to FullChoice Breath. Your message has reached Sandip and he will reply personally with a short form and the next available session options. In the meantime, take one slow breath. That is where choice begins.\n\nWarmly,\nSandip\nFullChoice Breath";
     try{
-      const response=await fetch("./contact.php",{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify(body)});
+      const response=await fetch("https://formsubmit.co/ajax/wellnesswithsandip@gmail.com",{method:"POST",headers:{"Content-Type":"application/json",Accept:"application/json"},body:JSON.stringify(body)});
       if(!response.ok) throw new Error("Unable to submit");
       form.reset();
       this.setState({contactStatus:"sent"});
