@@ -1,6 +1,41 @@
 {
   "buildCommand": "python3 build.py",
   "outputDirectory": "dist",
+  "redirects": [
+    {
+      "source": "/:path*",
+      "has": [
+        {
+          "type": "host",
+          "value": "fullchoicebreath.com"
+        }
+      ],
+      "destination": "https://www.dipatmawellness.com/:path*",
+      "permanent": true
+    },
+    {
+      "source": "/:path*",
+      "has": [
+        {
+          "type": "host",
+          "value": "www.fullchoicebreath.com"
+        }
+      ],
+      "destination": "https://www.dipatmawellness.com/:path*",
+      "permanent": true
+    },
+    {
+      "source": "/:path*",
+      "has": [
+        {
+          "type": "host",
+          "value": "dipatmawellness.com"
+        }
+      ],
+      "destination": "https://www.dipatmawellness.com/:path*",
+      "permanent": true
+    }
+  ],
   "rewrites": [
     {
       "source": "/about/",
