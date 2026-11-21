@@ -36,34 +36,20 @@
       "permanent": true
     }
   ],
-  "rewrites": [
+  "trailingSlash": true,
+  "headers": [
     {
-      "source": "/about/",
-      "destination": "/index.html"
-    },
-    {
-      "source": "/approach/",
-      "destination": "/index.html"
-    },
-    {
-      "source": "/solutions/",
-      "destination": "/index.html"
-    },
-    {
-      "source": "/impact-advisory/",
-      "destination": "/index.html"
-    },
-    {
-      "source": "/insights/",
-      "destination": "/index.html"
-    },
-    {
-      "source": "/contact/",
-      "destination": "/index.html"
-    },
-    {
-      "source": "/privacy/",
-      "destination": "/index.html"
+      "source": "/assets/:path*",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=3600, must-revalidate"
+        },
+        {
+          "key": "X-Content-Type-Options",
+          "value": "nosniff"
+        }
+      ]
     }
   ]
 }
