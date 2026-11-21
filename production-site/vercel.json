@@ -1,0 +1,34 @@
+{
+  "buildCommand": "python3 build.py",
+  "outputDirectory": "dist",
+  "rewrites": [
+    {
+      "source": "/about/",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/approach/",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/solutions/",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/impact-advisory/",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/insights/",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/contact/",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/privacy/",
+      "destination": "/index.html"
+    }
+  ]
+}
