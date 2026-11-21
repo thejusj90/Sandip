@@ -25,7 +25,7 @@ sectors=[r for r in rows if r['URL path'].startswith('/solutions/') and r['URL p
 impact='/impact-advisory/'
 article=[r for r in rows if r['Page'].startswith('Article')]
 assets=dict(zip([r['URL path'] for r in sectors],['corp-hd.webp','education-hd.webp','ngo-hd.webp','hospitality-hd.webp','facilities-hd.webp','executives-hd.webp']))
-photo_alt={'nature-hd.webp':'Illustrative image of balanced river stones in a calm natural setting','corp-hd.webp':'Illustrative image of colleagues in a workplace discussion','education-hd.webp':'Illustrative image of educators in a group discussion','ngo-hd.webp':'Illustrative image of a community meeting','hospitality-hd.webp':'Illustrative image of a tropical hospitality setting','facilities-hd.webp':'Illustrative image of a wellness facility interior','executives-hd.webp':'Illustrative portrait of a professional in a work setting','home-hd.webp':'Illustrative image of a facilitated group discussion','nature.jpg':'Illustrative image of a green retreat setting','brand-logo.webp':'Dīpātma Holistic Wellness logo'}
+photo_alt={'nature-hd.webp':'Illustrative image of balanced river stones in a calm natural setting','corp-hd.webp':'Illustrative image of colleagues in a workplace discussion','education-hd.webp':'Illustrative image of educators in a group discussion','ngo-hd.webp':'Illustrative image of a community meeting','hospitality-hd.webp':'Illustrative image of a tropical hospitality setting','facilities-hd.webp':'Illustrative image of a wellness facility interior','executives-hd.webp':'Illustrative portrait of a professional in a work setting','home-hd.webp':'Illustrative image of a facilitated group discussion','nature.jpg':'Illustrative image of a green retreat setting','brand-logo-light.webp':'Dīpātma Holistic Wellness logo'}
 sector_desc=['Workforce well-being, manager training and healthier work routines.','Educator capability, student well-being and campus planning.','Accessible programmes, caregiver support and local facilitator development.','Guest experience design, signature programmes and retreat operations.','Service design, facility readiness and client journeys.','Private coaching, recovery and sustainable leadership routines.']
 article_desc=['What makes a workshop useful after the event ends.','How to turn a property’s assets into a distinct guest experience.','Design programmes for accessibility, local ownership and handover.','Agree a shared outcome, test a route to change and decide what comes next.']
 interests={'consulting':'Consulting or assessment','training':'Training or workshop','design':'Programme design','partnership':'Strategic partnership','impact-strategy':'Community Impact Strategy','decision-impact-review':'Decision Impact Review','impact-readiness':'Impact Readiness Scan','impact-pilot':'Pilot design or evaluation','unsure':'Other or unsure'}
@@ -102,7 +102,7 @@ def visual():
  return '<aside class="decision-visual" aria-label="Community impact strategy at a glance"><span>THE ADVISORY BRIEF</span><h2>One community.<br>One outcome to test.</h2>'+''.join(f'<div class="visual-row"><span>0{i}</span><div>{t}</div></div>' for i,t in enumerate(['Listen to the people affected','Compare practical options','Design a costed pilot','Review what changed'],1))+'<small>A framework for making decisions, not a report of client results.</small></aside>'
 def hero(h,eyebrow,intro,buttons=(),asset=None):
  cl=(' impact-hero' if current==impact else ' home' if current=='/' else '')+(' lean' if not asset and current!=impact else '')
- visual_html=visual() if current==impact else f'<div class="hero-photo{" logo-image" if asset=="brand-logo.webp" else " approach-image" if asset=="nature-hd.webp" else " home-image" if asset=="home-hd.webp" else ""}">{img(asset,"eager")}</div>' if asset else ''
+ visual_html=visual() if current==impact else f'<div class="hero-photo{" logo-image" if asset=="brand-logo-light.webp" else " approach-image" if asset=="nature-hd.webp" else " home-image" if asset=="home-hd.webp" else ""}">{img(asset,"eager")}</div>' if asset else ''
  bc=''
  if current in assets:bc=f'<div class="hero-crumb"><a href="{href("/solutions/")}">Solutions</a> / {e(routes[current]["Page"])}</div>'
  elif any(r['URL path']==current for r in article):bc=f'<div class="hero-crumb"><a href="{href("/insights/")}">Insights</a> / Article</div>'
@@ -136,7 +136,7 @@ def shell(r,b,utility=False):
   head+=f'<meta property="og:image" content="{e(site)}/assets/home-hd.webp">'+tag('twitter:card','summary_large_image')
  if site and not utility:
   url=site+current;head+=f'<link rel="canonical" href="{e(url)}"><meta property="og:url" content="{e(url)}">'
-  org={'@type':'Organization','@id':site+'/#organization','name':'Dīpātma Holistic Wellness','url':site+'/','logo':site+'/assets/brand-logo.webp'}
+  org={'@type':'Organization','@id':site+'/#organization','name':'Dīpātma Holistic Wellness','url':site+'/','logo':site+'/assets/brand-logo-light.webp'}
   graph=[org,{'@type':'WebPage','@id':url+'#webpage','url':url,'name':title,'description':desc,'inLanguage':'en-IN'}]
   if current in assets or current==impact:graph.append({'@type':'Service','name':r['Page'],'description':desc,'url':url,'provider':{'@id':org['@id']}})
   if current!='/':
@@ -145,7 +145,7 @@ def shell(r,b,utility=False):
    graph.append({'@type':'BreadcrumbList','itemListElement':[{'@type':'ListItem','name':n,'item':site+u,'position':i} for i,(n,u) in enumerate(entries,1)]})
   head+='<script type="application/ld+json">'+json.dumps({'@context':'https://schema.org','@graph':graph},ensure_ascii=False).replace('<','\\u003c')+'</script>'
  header=f'''<a class="skip" href="#main">Skip to content</a><div class="topline"><div class="container topinner"><span>STRATEGIC WELLNESS · TRAINING · IMPACT ADVISORY</span><span>GOA · INDIA · ONLINE</span></div></div><header class="site-header"><div class="container navrow"><a class="brand" href="{href('/')}" aria-label="Dīpātma Holistic Wellness home"><span class="brand-mark">{img('logo-header.webp','eager',True)}</span><span class="brandtype"><b>Dīpātma</b><em>HOLISTIC WELLNESS</em></span></a><nav id="navigation" aria-label="Main navigation">{''.join(navlink(n,u) for n,u in nav)}</nav>{ac('Discuss a project','/contact/').replace('btn-dark','btn-dark btn-nav')}<button class="mobile-menu" type="button" aria-controls="navigation" aria-expanded="false">Menu</button></div></header>'''
- return f'<!doctype html><html lang="en-IN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>{e(title)}</title>{head}<link rel="icon" type="image/png" sizes="32x32" href="{href('/assets/favicon.png')}"><link rel="apple-touch-icon" sizes="180x180" href="{href('/assets/apple-touch-icon.png')}"><link rel="stylesheet" href="{href("/assets/base.css")}"><link rel="stylesheet" href="{href("/assets/site.css?v=20261121-priorities")}"><link rel="stylesheet" href="{href("/assets/mobile.css?v=20261121-mobile-1")}"><script defer src="{href("/assets/site.js?v=20261121-priorities")}"></script></head><body>{header}<main id="main">{b}</main>{foot()}</body></html>'
+ return f'<!doctype html><html lang="en-IN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>{e(title)}</title>{head}<link rel="icon" type="image/png" sizes="32x32" href="{href('/assets/favicon.png')}"><link rel="apple-touch-icon" sizes="180x180" href="{href('/assets/apple-touch-icon.png')}"><link rel="stylesheet" href="{href("/assets/base.css")}"><link rel="stylesheet" href="{href("/assets/site.css?v=logo-light-20261121-priorities")}"><link rel="stylesheet" href="{href("/assets/mobile.css?v=20261121-mobile-1")}"><script defer src="{href("/assets/site.js?v=20261121-priorities")}"></script></head><body>{header}<main id="main">{b}</main>{foot()}</body></html>'
 def render_row(r):
  is_article=r in article
  lines=(content/('articles' if is_article else 'pages')/r['Markdown filename']).read_text().splitlines()
@@ -165,7 +165,7 @@ def render_row(r):
   if s.startswith(('**Primary CTA:**','**Secondary CTA:**')) and '→' in s:
    n,u=s.split(':**',1)[1].split('→',1);buttons.append((n.strip(),u.strip()))
  if current=='/':buttons=[('Explore our solutions','/solutions/'),('Explore Impact Advisory',impact)]
- hero_pic=assets.get(current) or {'/':'home-hd.webp','/about/':'brand-logo.webp','/contact/':'hospitality-hd.webp','/approach/':'nature-hd.webp'}.get(current)
+ hero_pic=assets.get(current) or {'/':'home-hd.webp','/about/':'brand-logo-light.webp','/contact/':'hospitality-hd.webp','/approach/':'nature-hd.webp'}.get(current)
  body=hero(heading,eyebrow,lead,buttons,hero_pic)
  if current=='/':body+=impact_preview()
  for title,lines in groups:
