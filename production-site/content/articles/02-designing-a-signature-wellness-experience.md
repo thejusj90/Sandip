@@ -1,13 +1,13 @@
 # From a Yoga Amenity to a Signature Wellness Experience
 
 **Article category:** Hospitality & Retreat Strategy  
-**Suggested author:** Sandip Jadhav — confirm before publication  
+**Suggested author:** Sandip Jadhav: confirm before publication  
 **Publication date:** Add the actual date when published  
 **Suggested reading time:** Approximately 6 minutes
 
 A resort may have a beautiful yoga platform, a small spa, a swimming pool or a forest trail. These are valuable assets. But an asset becomes a distinctive guest experience only when it serves a clear purpose, is delivered thoughtfully and feels connected to the character of the property.
 
-The difference is easy to overlook. A list of available activities tells guests what they can book. A signature wellness experience helps them understand why the experience belongs in that place—and why they might remember it after they leave.
+The difference is easy to overlook. A list of available activities tells guests what they can book. A signature wellness experience helps them understand why the experience belongs in that place, and why they might remember it after they leave.
 
 ## Begin with the identity of the property
 
@@ -29,7 +29,7 @@ One programme should not promise to satisfy every audience. Segment the need and
 
 An experience benefits from a natural sequence: arrival, orientation, preparation, practice, reflection and transition. The guest should understand what they are invited to do and feel able to participate without pressure.
 
-For example, a nature-based morning might connect a gentle guided walk, attention practice and reflective conversation. Its value comes from thoughtful pacing and facilitation—not from adding the greatest number of activities.
+For example, a nature-based morning might connect a gentle guided walk, attention practice and reflective conversation. Its value comes from thoughtful pacing and facilitation, not from adding the greatest number of activities.
 
 ### 3. Real operational readiness
 
@@ -98,4 +98,4 @@ The right model depends on demand, programme complexity, required qualifications
 
 Consider guest experience, participation, service reliability, staff effort, direct costs and contribution after agreed expenses, rather than bookings alone.
 
-> **EDITORIAL NOTE — NOT FOR PUBLICATION:** This article is an original strategic perspective, not a claim that any named resort has achieved a particular outcome through Dīpātma.
+> **EDITORIAL NOTE: NOT FOR PUBLICATION:** This article is an original strategic perspective, not a claim that any named resort has achieved a particular outcome through Dīpātma.

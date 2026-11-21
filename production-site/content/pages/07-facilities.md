@@ -2,7 +2,7 @@
 
 **Eyebrow:** WELLNESS CENTRE CONSULTING · FACILITY DEVELOPMENT · SERVICE DESIGN
 
-**Hero introduction:** We help wellness entrepreneurs, operators and investors develop clear concepts, credible services, practical operating systems and meaningful client experiences—from planning to activation and improvement.
+**Hero introduction:** We help wellness entrepreneurs, operators and investors develop clear concepts, credible services, practical operating systems and meaningful client experiences, from planning to activation and improvement.
 
 **Primary CTA:** Discuss Your Wellness Venture → /contact/?sector=wellness-spaces-and-facilities#enquiry  
 **Secondary CTA:** Explore Our Approach → /approach/
@@ -29,7 +29,7 @@ Review of enquiries, intake, consent, booking, scheduling, service communication
 
 ### Space Planning & Experience Advisory
 
-Input on how intended wellness services should influence circulation, programme zones, accessibility, privacy and the guest or client experience. **Deliverable:** functional requirements brief for architects and designers—not an architectural or engineering certification.
+Input on how intended wellness services should influence circulation, programme zones, accessibility, privacy and the guest or client experience. **Deliverable:** functional requirements brief for architects and designers, not an architectural or engineering certification.
 
 ### Practitioner Standards & Team Training
 
@@ -41,11 +41,11 @@ A phased engagement to support launch readiness, pilot delivery, staff enablemen
 
 ## A possible 120-day activation pathway
 
-**Month 1 — Define:** Clarify positioning, audience, demand assumptions and the intended service model.
+**Month 1: Define:** Clarify positioning, audience, demand assumptions and the intended service model.
 
-**Months 2–3 — Build:** Refine programmes, procedures, staffing, client journeys and implementation responsibilities.
+**Months 2–3: Build:** Refine programmes, procedures, staffing, client journeys and implementation responsibilities.
 
-**Month 4 — Activate:** Test services, assess team readiness, review client response and prioritise improvements.
+**Month 4: Activate:** Test services, assess team readiness, review client response and prioritise improvements.
 
 The duration is illustrative; timing depends on the facility's development stage, infrastructure and regulatory requirements.
 

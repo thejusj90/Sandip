@@ -9,7 +9,7 @@
 
 ## Communities need more than occasional outreach
 
-The most meaningful community programmes begin with listening. People may experience overlapping challenges involving access, livelihood, disability, caring responsibilities, health literacy and the pressures of daily life. A well-intentioned workshop cannot address all of these—and a programme that disappears when the facilitator leaves may have limited long-term value.
+The most meaningful community programmes begin with listening. People may experience overlapping challenges involving access, livelihood, disability, caring responsibilities, health literacy and the pressures of daily life. A well-intentioned workshop cannot address all of these, and a programme that disappears when the facilitator leaves may have limited long-term value.
 
 Our work combines participatory discovery, accessible education, local capacity building and transparent programme design. We aim to strengthen what communities already know and can do, while identifying practical support systems that can continue beyond a single event.
 

@@ -15,31 +15,31 @@ Our work blends whole-person thinking with structured consulting and programme d
 
 ## The five stages of the Dīpātma Method {#method}
 
-### 01 — Insight: Understand before intervening
+### 01: Insight: Understand before intervening
 
 Listen to stakeholders, identify the population and environment, examine relevant operating patterns and clarify the desired change. This stage can include interviews, observations, assessments, a programme audit or a facilitated discovery workshop.
 
 **Typical deliverable:** context and priorities brief, with clear assumptions and areas requiring specialist input.
 
-### 02 — Architecture: Design what fits
+### 02: Architecture: Design what fits
 
 Translate priorities into a practical solution. Define the audience, objectives, learning activities, service processes, responsibilities, resources, safety boundaries and measures of progress. For commercial projects, also assess operating assumptions and programme economics.
 
 **Typical deliverable:** programme blueprint, implementation plan or service architecture.
 
-### 03 — Activation: Bring the design into practice
+### 03: Activation: Bring the design into practice
 
 Test and implement through workshops, pilots, coaching, training, experience facilitation or operational support. Engage relevant teams so that delivery can function in the actual setting rather than only on paper.
 
 **Typical deliverable:** facilitated programme, learning resources and implementation records.
 
-### 04 — Continuity: Make progress repeatable
+### 04: Continuity: Make progress repeatable
 
 Build the tools and routines that support ongoing practice: personal resources, team rhythms, internal champions, operational checklists, appropriate referrals and opt-in follow-up. Not every project requires a long retainer, but every project should consider what happens after delivery.
 
 **Typical deliverable:** continuity toolkit, ownership plan and agreed follow-up actions.
 
-### 05 — Evidence: Review, learn and improve
+### 05: Evidence: Review, learn and improve
 
 Evaluate the process against measures agreed at the beginning. Depending on context, these can include participation, adoption, service consistency, user feedback, team readiness or relevant business indicators. We distinguish observed changes from unsupported causal claims.
 
@@ -81,7 +81,7 @@ Yes. A consulting engagement can conclude with a defined blueprint. Implementati
 
 We agree measures before implementation, gather only suitable information, and review participation, practice adoption, service indicators or other context-relevant evidence without promising a specific clinical result.
 
-## Begin with the right question—not a ready-made answer.
+## Begin with the right question, not a ready-made answer.
 
 Tell us what your organisation is trying to improve, and we can discuss the most useful first step.
 

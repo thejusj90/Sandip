@@ -19,7 +19,7 @@ Dīpātma was founded by Sandip Jadhav, a wellness consultant and facilitator wh
 
 His approach is shaped by a simple conviction: methods become more valuable when they fit the individual, the environment and the purpose of the work. Rather than treating wellness as a uniform activity, Dīpātma explores how different capabilities can come together to support practical change.
 
-> **EDITORIAL VERIFICATION — NOT FOR PUBLICATION:** confirm final professional title, duration of experience and any formal qualification descriptions. Publish specific credential names only with supporting documentation.
+> **EDITORIAL VERIFICATION: NOT FOR PUBLICATION:** confirm final professional title, duration of experience and any formal qualification descriptions. Publish specific credential names only with supporting documentation.
 
 Dīpātma also offers [Impact Advisory](/impact-advisory/), helping organisations consider the consequences of decisions and design initiatives around outcomes that matter to the people affected.
 
@@ -45,7 +45,7 @@ A good experience should connect with everyday life. Our work considers individu
 
 The best solutions are often co-created. We work with decision-makers, participants, operational teams and qualified partners to develop approaches that fit local reality.
 
-## What we do—and what we do not claim
+## What we do, and what we do not claim
 
 Dīpātma provides strategic wellness advisory, non-clinical education, training, coaching, programme design and partnership support. We do not claim to diagnose or treat medical conditions through general wellness services, and we do not act as a government accreditation body.
 

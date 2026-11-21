@@ -1,7 +1,7 @@
 # How Community Well-being Programmes Continue After the Workshop
 
 **Article category:** NGOs, Inclusion & Social Impact  
-**Suggested author:** Sandip Jadhav — confirm before publication  
+**Suggested author:** Sandip Jadhav: confirm before publication  
 **Publication date:** Add the actual date when published  
 **Suggested reading time:** Approximately 6 minutes
 
@@ -61,13 +61,13 @@ For a short pilot, qualitative feedback and process measures may be more appropr
 
 ## An illustrative four-month community project
 
-**Month 1 — Listen and co-design.** Map needs, strengths, participation barriers, accessible formats and local partners.
+**Month 1: Listen and co-design.** Map needs, strengths, participation barriers, accessible formats and local partners.
 
-**Month 2 — Deliver and adapt.** Facilitate selected learning activities and refine materials in response to participant experience.
+**Month 2: Deliver and adapt.** Facilitate selected learning activities and refine materials in response to participant experience.
 
-**Month 3 — Build internal capability.** Support local champions, clarify boundaries and practise the delivery of suitable activities.
+**Month 3: Build internal capability.** Support local champions, clarify boundaries and practise the delivery of suitable activities.
 
-**Month 4 — Review and hand over.** Document participation, learning, remaining gaps and a realistic plan for continued delivery or future funding.
+**Month 4: Review and hand over.** Document participation, learning, remaining gaps and a realistic plan for continued delivery or future funding.
 
 The sequence should change when the community requires it. The purpose is to make each stage useful and locally accountable.
 
@@ -100,4 +100,4 @@ Yes, for suitable non-clinical activities within defined roles. Training should 
 
 An accurate summary of activities, participation, accessibility adaptations, learning, expenditure responsibilities and next-step recommendations, subject to the agreed reporting scope.
 
-> **EDITORIAL NOTE — NOT FOR PUBLICATION:** Use consented photographs and approved client names only. Do not identify community participants or imply specific outcomes without evidence and permission.
+> **EDITORIAL NOTE: NOT FOR PUBLICATION:** Use consented photographs and approved client names only. Do not identify community participants or imply specific outcomes without evidence and permission.
