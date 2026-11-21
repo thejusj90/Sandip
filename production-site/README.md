@@ -6,7 +6,7 @@ This is the Vercel project root for dipatmawellness.com. The source is the suppl
 - Edit templates in `generate.py` and presentation in `assets/`.
 - Run `python3 build.py`; generated pages and images are written to `dist/`.
 - `vercel.json` serves those individual pages and retains the previous-domain redirects.
-- Enquiries use the previously configured FormSubmit route to wellnesswithsandip@gmail.com. Domain activation and inbox delivery require a real submission check; an HTTP success alone does not verify inbox receipt.
+- Enquiries use the previously configured FormSubmit route to hello@dipatmawellness.com. Domain activation and inbox delivery require a real submission check; an HTTP success alone does not verify inbox receipt.
 
 The supplied photographs are illustrative. They are not presented as photographs of Dīpātma client projects.
 

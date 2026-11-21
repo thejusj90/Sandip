@@ -31,7 +31,7 @@ contact = pages[(ROOT / 'contact/index.html').resolve()]
 required = {a.get('name') for t, a in contact.tags if t in ('input', 'textarea', 'select') and 'required' in a}
 assert required == {'name', 'email', 'message', 'consent'}, required
 assert any(t == 'details' and a.get('id') == 'project-details' for t, a in contact.tags)
-assert any(t == 'form' and a.get('data-live') == 'true' and a.get('action') == 'https://formsubmit.co/wellnesswithsandip@gmail.com' for t, a in contact.tags)
+assert any(t == 'form' and a.get('data-live') == 'true' and a.get('action') == 'https://formsubmit.co/hello@dipatmawellness.com' for t, a in contact.tags)
 urls = [e.text for e in ET.parse(ROOT / 'sitemap.xml').iter('{http://www.sitemaps.org/schemas/sitemap/0.9}loc')]
 assert len(urls) == 17 and len(set(urls)) == 17
 for url in urls:

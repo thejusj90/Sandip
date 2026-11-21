@@ -12,7 +12,7 @@ subprocess.run([
     sys.executable, str(root / "generate.py"),
     "--out", str(out),
     "--domain", "https://www.dipatmawellness.com",
-    "--form-action", "https://formsubmit.co/wellnesswithsandip@gmail.com",
+    "--form-action", "https://formsubmit.co/hello@dipatmawellness.com",
     "--privacy-file", str(root / "privacy-notice.md"),
 ], check=True)
 
