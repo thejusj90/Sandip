@@ -1,0 +1,88 @@
+/* Readable phone and tablet layouts; desktop styles remain in site.css. */
+@media (max-width: 900px) {
+  body { font-size: 1.0625rem; line-height: 1.8; }
+  .container { width: calc(100% - 40px); min-width: 0; }
+  main, .hero-flex > *, .highlight .container > *, .contact-layout > * { min-width: 0; }
+  .topinner { min-height: 0; padding-block: 8px; }
+  .topline { font-size: .8125rem; line-height: 1.55; letter-spacing: .07em; }
+  .site-header { position: sticky; top: 0; z-index: 20; }
+  .navrow { height: auto; min-height: 78px; gap: 16px; padding-block: 12px; }
+  .brand { min-width: 0; gap: 10px; }
+  .brand-mark { flex-shrink: 0; }
+  .brandtype b { font-size: 1.625rem; }
+  .brandtype em { font-size: .625rem; letter-spacing: .12em; }
+  .mobile-menu { display: block; min-width: 72px; min-height: 48px; padding: 10px 16px; font-size: 1rem; }
+  .btn-nav { display: none; }
+  .site-header nav:not([hidden]) { max-height: calc(100dvh - 90px); overflow-y: auto; padding: 8px 20px 16px; }
+  .site-header .navlink { min-height: 48px; padding: 14px 4px; font-size: 1.0625rem; line-height: 1.5; }
+  [id] { scroll-margin-top: 100px; }
+  .hero-flex, .impact-hero .hero-flex { grid-template-columns: minmax(0, 1fr); padding-block: 40px 44px; gap: 32px; }
+  .hero.lean .hero-flex { padding-block: 40px 44px; }
+  .hero h1 { font-size: clamp(2.125rem, 7vw, 3.25rem); line-height: 1.16; letter-spacing: -.025em; margin: 16px 0 24px; overflow-wrap: break-word; }
+  .hero .eyebrow, .card .eyebrow { font-size: .8125rem; line-height: 1.7; letter-spacing: .1em; }
+  .hero p, .sec p, .sec li, .card p, .article-main p, .article-main li { font-size: 1.0625rem; line-height: 1.8; }
+  .prose p, .article-main p { margin-bottom: 1.15em; }
+  .prose li, .article-main li { margin-bottom: 14px; }
+  .sec { padding-block: 48px; }
+  .sec h2, .article-main h2 { font-size: clamp(1.8rem, 5.4vw, 2.25rem); line-height: 1.25; letter-spacing: -.02em; margin-bottom: 24px; overflow-wrap: break-word; }
+  .sec h3, .article-main h3, .linked-card h3 { font-size: 1.5rem; line-height: 1.35; margin-bottom: 16px; }
+  .prose h3, .article-main h3 { margin-top: 32px; }
+  .cards, .pair, .grid-four { gap: 24px; margin-top: 28px; }
+  .card { padding: 26px; }
+  .linked-card { padding: 0; }
+  .card-copy { padding: 24px; }
+  .card-copy .arrow { display: inline-block; font-size: 1rem; min-height: 44px; padding-top: 10px; }
+  .card p { margin-bottom: 18px; }
+  .hero-photo, .hero-photo.home-image, .hero-photo.approach-image { height: auto; aspect-ratio: 3/2; }
+  .hero-photo img { width: 100%; height: auto; aspect-ratio: 3/2; object-fit: contain; }
+  .highlight .container, .contact-layout { grid-template-columns: minmax(0, 1fr); gap: 28px; }
+  .decision-visual { padding: 26px; box-shadow: 4px 5px 0 #d7ddce; }
+  .decision-visual h2 { font-size: 1.875rem; line-height: 1.25; }
+  .visual-row { padding-block: 16px; font-size: 1.125rem; line-height: 1.6; }
+  .decision-visual small { font-size: .875rem; line-height: 1.75; }
+  .btn, .hero .actions .btn, .btnrow .btn, .footercta-grid .btn { min-height: 50px; font-size: 1rem; line-height: 1.45; padding: 13px 18px; }
+  .actions, .btnrow { gap: 14px; margin-top: 26px; }
+  .textlink { font-size: 1rem; padding-block: 10px; overflow-wrap: anywhere; }
+  .faqs details { padding-block: 18px; }
+  .faqs summary { min-height: 48px; font-size: 1.0625rem; line-height: 1.6; padding-block: 8px; }
+  .faqs details p { margin: 12px 0 4px; }
+  .article-main { padding-block: 40px 52px; }
+  .article-main .container { width: calc(100% - 40px); }
+  .article-main h2 { margin-top: 40px; }
+  .contact-layout .form-card { padding: 24px; }
+  .form-card label { font-size: 1rem; line-height: 1.6; gap: 10px; margin-bottom: 24px; }
+  .form-card input, .form-card select, .form-card textarea { min-height: 52px; font-size: 1.0625rem; line-height: 1.5; padding: 14px; }
+  .form-card select { padding-right: 40px; }
+  .form-card textarea { min-height: 180px; }
+  .contact-layout form p, .form-status { font-size: 1rem; line-height: 1.75; }
+  .form-card .privacycheck { gap: 12px; margin-block: 24px; }
+  .form-card .privacycheck input { width: 24px; min-width: 24px; height: 24px; min-height: 24px; padding: 0; flex-shrink: 0; }
+  .form-card .privacycheck span { font-weight: 400; }
+  .project-details { margin-block: 24px; padding-block: 16px; }
+  .project-details summary { min-height: 48px; font-size: 1rem; line-height: 1.6; padding-block: 10px; }
+  .project-details-fields { padding-top: 22px; }
+  .form-card button[type=submit] { width: 100%; min-width: 0; min-height: 52px; font-size: 1rem; }
+  .footercta-grid { gap: 20px; padding-block: 40px; }
+  .footercta-grid h2 { font-size: 2rem; line-height: 1.25; }
+  .footercta-grid p, .footergrid p { font-size: 1rem; line-height: 1.8; }
+  .footergrid { gap: 32px; padding-block: 44px; }
+  .footergrid a { display: flex; align-items: center; min-height: 44px; margin: 0; padding-block: 7px; font-size: 1rem; line-height: 1.5; }
+  .footline { font-size: .875rem; line-height: 1.7; padding-block: 22px; }
+}
+@media (max-width: 700px) {
+  .cards, .pair, .grid-four, .steps { grid-template-columns: minmax(0, 1fr); }
+  .steps { gap: 18px; }
+  .step { min-height: 0; padding: 24px; }
+  .step b { font-size: 1.5rem; line-height: 1.35; }
+  .step span { font-size: 1rem; line-height: 1.75; }
+  .form-row { grid-template-columns: minmax(0, 1fr); gap: 0; }
+}
+@media (max-width: 600px) {
+  .hero .actions, .btnrow { display: grid; grid-template-columns: minmax(0, 1fr); }
+  .hero .actions .btn, .btnrow .btn, .footercta-grid .btn { width: 100%; }
+  .hero h1 { font-size: clamp(2.125rem, 8.3vw, 2.75rem); }
+  .footergrid { grid-template-columns: minmax(0, 1fr); }
+  .footline { display: grid; gap: 10px; }
+  .brandtype em { letter-spacing: .08em; }
+  .contact-layout .form-card { padding: 20px; }
+}
