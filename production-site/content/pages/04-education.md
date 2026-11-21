@@ -11,7 +11,7 @@
 
 Students, educators, administrators and families bring different needs to the learning environment. Academic pressure, attention challenges, digital routines, physical inactivity and educator workload can affect daily experience. One-off motivational sessions are rarely sufficient to create useful, lasting routines.
 
-Dīpātma helps institutions develop a practical, age-appropriate approach to well-being—one that supports educators, equips students with everyday skills and respects the institution's safeguarding responsibilities.
+Dīpātma helps institutions develop a practical, age-appropriate approach to well-being, one that supports educators, equips students with everyday skills and respects the institution's safeguarding responsibilities.
 
 ## Educational wellness solutions
 
@@ -53,7 +53,7 @@ Appropriate measures may include attendance, educator confidence, learning feedb
 
 ## Safeguarding and professional boundaries
 
-Work with minors requires age-appropriate design, institutional permissions, parental or guardian consent where applicable, suitable facilitator oversight and clear escalation pathways. Dīpātma's non-clinical programmes complement—not replace—educational counselling, healthcare or other specialist services.
+Work with minors requires age-appropriate design, institutional permissions, parental or guardian consent where applicable, suitable facilitator oversight and clear escalation pathways. Dīpātma's non-clinical programmes complement, not replace, educational counselling, healthcare or other specialist services.
 
 Redesigning a campus policy or an access initiative? Explore [Impact Advisory](/impact-advisory/) to compare options and plan a pilot.
 

@@ -1,7 +1,7 @@
 # Why Workplace Well-being Needs More Than a Wellness Day
 
 **Article category:** Workplace Well-being & Organisational Culture  
-**Suggested author:** Sandip Jadhav — confirm final professional title before publication  
+**Suggested author:** Sandip Jadhav: confirm final professional title before publication  
 **Publication date:** Add the actual date when published  
 **Suggested reading time:** Approximately 5–6 minutes
 
@@ -81,7 +81,7 @@ An SME may benefit more from a concise diagnostic, a team workshop and a practic
 
 A capable partner does more than deliver an engaging session. They help distinguish needs from assumptions, define appropriate interventions, build capability and review practical outcomes. They should also be clear about professional boundaries and when changes to workload, policy or clinical support are outside the scope of wellness facilitation.
 
-For Dīpātma, the aim is to make workplace well-being more thoughtful, usable and integrated—not more complicated.
+For Dīpātma, the aim is to make workplace well-being more thoughtful, usable and integrated, not more complicated.
 
 ## A better question for the next wellness initiative
 

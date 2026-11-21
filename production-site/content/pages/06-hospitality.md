@@ -21,7 +21,7 @@ A strategic review of property assets, positioning, guest expectations, current 
 
 ### Signature Stay Rituals
 
-Design of purposeful, guest-friendly wellness moments—such as arrival decompression, mindful movement, guided breathing, quiet morning experiences or restorative evening routines. **Deliverable:** activity concepts, guest flow and facilitator or team guidance.
+Design of purposeful, guest-friendly wellness moments, such as arrival decompression, mindful movement, guided breathing, quiet morning experiences or restorative evening routines. **Deliverable:** activity concepts, guest flow and facilitator or team guidance.
 
 ### Nature-led Experience Studio
 

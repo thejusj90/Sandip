@@ -17,16 +17,16 @@ Whether you already have a detailed brief or are exploring an idea, share the co
 
 **Form fields:**
 
-- Full name — required
-- Work email — required
-- Organisation / institution — optional
-- Client category — optional; select: Corporate & SME; Education; NGO & Social Impact; Hospitality & Retreats; Wellness Spaces & Facilities; Leadership & Executives; Impact Advisory / Cross-sector; Other
-- Type of support — optional; select: Consulting / Assessment; Training / Workshop; Programme Design; Strategic Partnership; Community Impact Strategy; Decision Impact Review; Impact Readiness Scan; Pilot Design & Evaluation; Other / Unsure
-- Location of proposed engagement — optional
-- Preferred timeline — optional
-- Your requirements — required, open text
-- Budget range — optional; can also be discussed later
-- Privacy acknowledgement — required: I understand that the details I submit will be used to respond to this enquiry, subject to the published privacy notice.
+- Full name: required
+- Work email: required
+- Organisation / institution: optional
+- Client category: optional; select: Corporate & SME; Education; NGO & Social Impact; Hospitality & Retreats; Wellness Spaces & Facilities; Leadership & Executives; Impact Advisory / Cross-sector; Other
+- Type of support: optional; select: Consulting / Assessment; Training / Workshop; Programme Design; Strategic Partnership; Community Impact Strategy; Decision Impact Review; Impact Readiness Scan; Pilot Design & Evaluation; Other / Unsure
+- Location of proposed engagement: optional
+- Preferred timeline: optional
+- Your requirements: required, open text
+- Budget range: optional; can also be discussed later
+- Privacy acknowledgement: required: I understand that the details I submit will be used to respond to this enquiry, subject to the published privacy notice.
 
 **Submit button:** Send Project Enquiry
 
@@ -38,11 +38,11 @@ Whether you already have a detailed brief or are exploring an idea, share the co
 
 ## What happens after you enquire?
 
-**01 — Review:** We examine the organisation, intended audience, broad needs and requested support.
+**01: Review:** We examine the organisation, intended audience, broad needs and requested support.
 
-**02 — Fit conversation:** If appropriate, we discuss scope, decision-makers, location, timeline and any information needed for a proposal.
+**02: Fit conversation:** If appropriate, we discuss scope, decision-makers, location, timeline and any information needed for a proposal.
 
-**03 — Defined next step:** Depending on the requirement, we may propose a diagnostic, scoped training, programme-design assignment or partnership discussion.
+**03: Defined next step:** Depending on the requirement, we may propose a diagnostic, scoped training, programme-design assignment or partnership discussion.
 
 An introductory conversation does not include free proprietary programme design or a commitment to accept the project.
 

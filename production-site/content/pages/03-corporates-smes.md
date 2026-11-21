@@ -29,7 +29,7 @@ An organised review of employee experience, work patterns and existing support. 
 
 ### Workday Reset Protocols
 
-Short, role-appropriate practices for breathing, movement, attention, recovery and healthier work rhythms. These are designed for realistic use between meetings, shifts or work tasks—not as a substitute for addressing unsafe conditions. **Deliverable:** guided sessions, role-based resources and adoption plan.
+Short, role-appropriate practices for breathing, movement, attention, recovery and healthier work rhythms. These are designed for realistic use between meetings, shifts or work tasks, not as a substitute for addressing unsafe conditions. **Deliverable:** guided sessions, role-based resources and adoption plan.
 
 ### Team Resonance Labs
 
