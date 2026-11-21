@@ -28,10 +28,10 @@
    const response=await fetch(endpoint.href,{method:'POST',headers:{'Content-Type':'application/json',Accept:'application/json'},body:JSON.stringify(payload),signal:controller.signal});
    const result=await response.json();
    if(!response.ok||!(result.success===true||result.success==='true'))throw new Error('Submission not confirmed');
-   status.textContent='Thank you. The enquiry service has accepted your message. You can also contact wellnesswithsandip@gmail.com directly.';
+   status.textContent='Thank you. The enquiry service has accepted your message. You can also contact hello@dipatmawellness.com directly.';
    form.reset();fill(sector,'sector');fill(interest,'interest');update();
   }catch(error){
-   status.textContent='We could not confirm your submission. Your details are still here. Please email wellnesswithsandip@gmail.com or try again.';
+   status.textContent='We could not confirm your submission. Your details are still here. Please email hello@dipatmawellness.com or try again.';
   }finally{
    clearTimeout(timer);button.disabled=false;button.textContent=originalLabel;form.removeAttribute('aria-busy');
   }
