@@ -1,3 +1,9 @@
+# Current Dīpātma website
+
+The production website at https://www.dipatmawellness.com is built from `production-site/`. See [the current source and release instructions](production-site/README.md). The root-level Sandip HTML files below are retained legacy material and are not the production deployment root.
+
+---
+
 # Sandip Jadhav — Website
 
 Static HTML/CSS/JavaScript website for Sandip Jadhav, Breathing Pattern Correction Practitioner. Built for GitHub Pages. No build step, no frameworks, no dependencies beyond a Google Fonts import.

@@ -1,0 +1,189 @@
+[
+  {
+    "Page": "Home",
+    "URL path": "/",
+    "SEO title": "Strategic Wellness Consulting in Goa | Dīpātma",
+    "Meta description": "Dīpātma provides strategic wellness consulting, training and impact advisory for organisations, institutions and hospitality ventures in Goa and across India.",
+    "Primary target phrase": "wellness consulting Goa",
+    "Secondary search themes": "organisational wellness solutions; strategic wellness consulting India; wellness partnerships",
+    "Search intent": "Commercial / brand",
+    "Proposed H1": "Well-being, built into the way organisations work.",
+    "Markdown filename": "01-home.md"
+  },
+  {
+    "Page": "Solutions",
+    "URL path": "/solutions/",
+    "SEO title": "Wellness Solutions for Organisations | Dīpātma",
+    "Meta description": "Explore six sector-specific wellness portfolios and cross-sector impact advisory from Dīpātma, a Goa-based consulting and training partner.",
+    "Primary target phrase": "organisational wellness solutions",
+    "Secondary search themes": "wellness consulting services; training partnerships; B2B wellness India",
+    "Search intent": "Commercial / navigation",
+    "Proposed H1": "One philosophy. Six distinct sectors.",
+    "Markdown filename": "02-solutions.md"
+  },
+  {
+    "Page": "Corporates & SMEs",
+    "URL path": "/solutions/corporates-and-smes/",
+    "SEO title": "Corporate Wellness Programmes in Goa | Dīpātma",
+    "Meta description": "Build healthier work routines and stronger teams with Dīpātma corporate wellness consulting, employee training and workforce well-being programmes.",
+    "Primary target phrase": "corporate wellness programmes Goa",
+    "Secondary search themes": "employee wellbeing consultant India; workforce wellness training; SME wellness programmes",
+    "Search intent": "Commercial / service",
+    "Proposed H1": "Well-being that works at work.",
+    "Markdown filename": "03-corporates-smes.md"
+  },
+  {
+    "Page": "Education",
+    "URL path": "/solutions/educational-institutions/",
+    "SEO title": "School & Institutional Wellness Programmes | Dīpātma",
+    "Meta description": "Support learning environments through educator well-being training, age-appropriate student programmes and whole-campus wellness consulting.",
+    "Primary target phrase": "school wellness programmes",
+    "Secondary search themes": "teacher wellbeing training; student wellbeing programmes; educational institution wellness",
+    "Search intent": "Commercial / service",
+    "Proposed H1": "Better learning begins with better support.",
+    "Markdown filename": "04-education.md"
+  },
+  {
+    "Page": "NGOs & Social Impact",
+    "URL path": "/solutions/ngos-and-social-impact/",
+    "SEO title": "Community Well-being & NGO Programmes | Dīpātma",
+    "Meta description": "Co-design inclusive community well-being programmes, train local facilitators and strengthen NGOs through practical capacity-building partnerships.",
+    "Primary target phrase": "community wellbeing programmes",
+    "Secondary search themes": "NGO wellness programmes; social impact wellness; inclusive community health literacy",
+    "Search intent": "Commercial / service",
+    "Proposed H1": "Well-being rooted in dignity and belonging.",
+    "Markdown filename": "05-ngos.md"
+  },
+  {
+    "Page": "Hospitality & Retreats",
+    "URL path": "/solutions/hospitality-and-retreats/",
+    "SEO title": "Wellness Resort & Retreat Consulting | Dīpātma",
+    "Meta description": "Create distinctive resort wellness experiences with guest journey audits, retreat programme design, staff training and hospitality partnerships.",
+    "Primary target phrase": "wellness resort consulting",
+    "Secondary search themes": "retreat programme design Goa; resort wellness experiences; hospitality wellness strategy",
+    "Search intent": "Commercial / service",
+    "Proposed H1": "Make the experience worth remembering. And repeating.",
+    "Markdown filename": "06-hospitality.md"
+  },
+  {
+    "Page": "Wellness Spaces & Facilities",
+    "URL path": "/solutions/wellness-spaces-and-facilities/",
+    "SEO title": "Wellness Centre Consulting & Service Design | Dīpātma",
+    "Meta description": "Plan, launch or improve wellness centres and spas with venture blueprints, service design, client journey reviews and operational advisory.",
+    "Primary target phrase": "wellness centre consulting",
+    "Secondary search themes": "spa business consulting; wellness facility development; wellness service design",
+    "Search intent": "Commercial / service",
+    "Proposed H1": "A wellness space needs more than beautiful interiors.",
+    "Markdown filename": "07-facilities.md"
+  },
+  {
+    "Page": "Leadership & Executives",
+    "URL path": "/solutions/leadership-and-executives/",
+    "SEO title": "Executive Wellness Coaching & Leadership Support | Dīpātma",
+    "Meta description": "Confidential, non-clinical executive well-being coaching focused on self-regulation, recovery, healthier routines and sustainable leadership.",
+    "Primary target phrase": "executive wellness coaching",
+    "Secondary search themes": "leadership wellbeing programme; founder wellness coaching; executive recovery support",
+    "Search intent": "Commercial / service",
+    "Proposed H1": "Lead with more capacity. Not more strain.",
+    "Markdown filename": "08-leadership.md"
+  },
+  {
+    "Page": "Impact Advisory",
+    "URL path": "/impact-advisory/",
+    "SEO title": "Impact Advisory & Community Impact Strategy | Dīpātma",
+    "Meta description": "Dīpātma helps organisations review the potential impact of decisions, design community impact strategies and test pilots before scaling. Based in Goa.",
+    "Primary target phrase": "community impact strategy consulting",
+    "Secondary search themes": "social impact advisory India; decision impact review; stakeholder engagement; impact pilot evaluation",
+    "Search intent": "Commercial / advisory",
+    "Proposed H1": "Design for the impact you want to create.",
+    "Markdown filename": "13-impact-advisory.md"
+  },
+  {
+    "Page": "Our Approach",
+    "URL path": "/approach/",
+    "SEO title": "Our Method: Strategic Wellness Design | Dīpātma",
+    "Meta description": "Discover Dīpātma’s five-stage wellness consulting method: Insight, Architecture, Activation, Continuity and Evidence for practical, lasting programmes.",
+    "Primary target phrase": "wellness consulting methodology",
+    "Secondary search themes": "wellness programme design framework; evidence informed wellness; wellness evaluation",
+    "Search intent": "Trust / process",
+    "Proposed H1": "Not another programme. A way forward.",
+    "Markdown filename": "09-approach.md"
+  },
+  {
+    "Page": "About",
+    "URL path": "/about/",
+    "SEO title": "About Dīpātma Holistic Wellness | Goa, India",
+    "Meta description": "Learn about Dīpātma’s purpose, principles and founder-led approach to strategic wellness consulting, training and people-centred partnerships.",
+    "Primary target phrase": "Dīpātma Holistic Wellness",
+    "Secondary search themes": "wellness consultant Goa; Sandip Jadhav wellness; holistic wellness enterprise",
+    "Search intent": "Trust / brand",
+    "Proposed H1": "Whole-person thinking. Real-world relevance.",
+    "Markdown filename": "10-about.md"
+  },
+  {
+    "Page": "Insights",
+    "URL path": "/insights/",
+    "SEO title": "Wellness Strategy Insights & Resources | Dīpātma",
+    "Meta description": "Practical guidance on workplace well-being, resort experience design, community programme continuity and how to design a community impact pilot.",
+    "Primary target phrase": "wellness strategy insights",
+    "Secondary search themes": "corporate wellbeing articles; hospitality wellness resources; NGO wellbeing guidance",
+    "Search intent": "Informational / hub",
+    "Proposed H1": "Ideas worth carrying forward.",
+    "Markdown filename": "11-insights.md"
+  },
+  {
+    "Page": "Contact",
+    "URL path": "/contact/",
+    "SEO title": "Contact Dīpātma | Wellness Consulting Enquiries",
+    "Meta description": "Discuss a wellness, training or impact advisory project with Dīpātma. Share your organisation, desired outcome or upcoming decision.",
+    "Primary target phrase": "contact wellness consultant Goa",
+    "Secondary search themes": "wellness partnership enquiry; corporate wellness consultation; hospitality wellness consulting contact",
+    "Search intent": "Transactional / enquiry",
+    "Proposed H1": "Tell us what you're imagining.",
+    "Markdown filename": "12-contact.md"
+  },
+  {
+    "Page": "Article — Workplace",
+    "URL path": "/insights/workplace-wellbeing-beyond-one-off-events/",
+    "SEO title": "Workplace Well-being Beyond Wellness Days | Dīpātma",
+    "Meta description": "Why a corporate wellness day is not enough—and how diagnostics, manager support, relevant practices and review can create a more useful programme.",
+    "Primary target phrase": "workplace wellbeing programme",
+    "Secondary search themes": "employee wellness day; sustainable corporate wellness; manager wellbeing training",
+    "Search intent": "Informational / article",
+    "Proposed H1": "Why Workplace Well-being Needs More Than a Wellness Day",
+    "Markdown filename": "01-workplace-wellbeing-beyond-one-off-events.md"
+  },
+  {
+    "Page": "Article — Hospitality",
+    "URL path": "/insights/designing-a-signature-wellness-experience/",
+    "SEO title": "How to Design a Signature Resort Wellness Experience",
+    "Meta description": "Learn how resorts and retreat venues can turn yoga, nature and spa assets into distinctive, operationally sound guest wellness experiences.",
+    "Primary target phrase": "signature resort wellness experience",
+    "Secondary search themes": "wellness retreat design; resort wellness programme; hospitality experience architecture",
+    "Search intent": "Informational / article",
+    "Proposed H1": "From a Yoga Amenity to a Signature Wellness Experience",
+    "Markdown filename": "02-designing-a-signature-wellness-experience.md"
+  },
+  {
+    "Page": "Article — Community",
+    "URL path": "/insights/community-wellbeing-programme-with-continuity/",
+    "SEO title": "Sustainable Community Well-being Programmes | Dīpātma",
+    "Meta description": "A practical guide to inclusive NGO well-being programmes with accessible design, local facilitator capability, continuity and meaningful evaluation.",
+    "Primary target phrase": "sustainable community wellbeing programmes",
+    "Secondary search themes": "NGO wellness workshop; community facilitator training; inclusive wellness programmes",
+    "Search intent": "Informational / article",
+    "Proposed H1": "How Community Well-being Programmes Continue After the Workshop",
+    "Markdown filename": "03-community-wellbeing-programme-with-continuity.md"
+  },
+  {
+    "Page": "Article — Impact Advisory",
+    "URL path": "/insights/designing-a-community-impact-pilot/",
+    "SEO title": "How to Design a Community Impact Pilot | Dīpātma",
+    "Meta description": "Build a community impact pilot with a shared outcome, theory of change, baseline measures and clear criteria to continue, adapt, stop or scale.",
+    "Primary target phrase": "how to design a community impact pilot",
+    "Secondary search themes": "theory of change; impact measurement plan; community impact evaluation",
+    "Search intent": "Informational / article",
+    "Proposed H1": "How to Design a Community Impact Pilot",
+    "Markdown filename": "04-designing-a-community-impact-pilot.md"
+  }
+]
